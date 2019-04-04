@@ -75,7 +75,7 @@ else:
 all_plants = app.get_plants()
 target_plants = [];
 for plant in all_plants:
-	if plant['name'].lower() == PLANT_TYPE:
+	if plant['name'].lower() == PLANT_TYPE and plant['plant_stage'] == 'planned':
 		target_plants.append(plant)
 
 if not len(target_plants):
