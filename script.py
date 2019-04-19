@@ -12,9 +12,9 @@ from Coordinate import Coordinate
 def chew():
 	for i in range(NUM_CHEWS):
 		device.set_servo_angle(SERVO_PIN, HOLE_OPEN_ANGLE)
-		device.wait(100)
+		device.wait(500)
 		device.set_servo_angle(SERVO_PIN, HOLE_CLOSE_ANGLE)
-		device.wait(100)
+		device.wait(500)
 
 def chomp():
 	for i in range(NUM_BITES):
